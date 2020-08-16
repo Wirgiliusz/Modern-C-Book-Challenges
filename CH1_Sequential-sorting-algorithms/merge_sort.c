@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-
-#define ARRAY_LEN 10
+#include "array_functions.h"
 
 void merge(int array[], int l, int m, int r) {
     int L_len = m - l + 1;
