@@ -16,10 +16,10 @@ int partition(int array[], int l, int r) {
     for (int j=l; j<=r-1; ++j) {
         if (array[j] < pivot) {
             ++i;
-            swap(array, i, j);
+            swap_elements(array, i, j);
         }
     }
-    swap(array, i+1, r);
+    swap_elements(array, i+1, r);
 
     return i+1;
 }
@@ -29,7 +29,7 @@ void quick_sort(int array[], int l, int r) {
         int part_idx = partition(array, l, r);
 
         quick_sort(array, l, part_idx-1);
-        quick_sort(array, part_idx+1; r);
+        quick_sort(array, part_idx+1, r);
     }
 }
 
