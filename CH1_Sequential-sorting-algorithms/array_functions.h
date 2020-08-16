@@ -1,3 +1,5 @@
+#include <stdbool.h>
+
 #define ARRAY_LEN 10
 
 
